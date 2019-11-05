@@ -1,0 +1,19 @@
+<%- include('../includes/head.ejs') -%>
+<body>
+    <div class="container">
+      <h2>Add new Band</h2>
+        <div class="card">
+            <form action="/create/band" method="POST">
+      
+                <label for="bandname"><b>Band Name</b></label>
+                <input type="text" placeholder="Enter Band Name" name="bandname" required>
+                <label for="bandtype"><b>Band Type</b></label>
+                <input type="text" placeholder="Enter Band Type" name="bandtype" required>
+                
+                <button type="submit">Add</button>
+
+            </form>
+            
+        </div>
+    </div>
+<%- include('../includes/foot.ejs') -%>

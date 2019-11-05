@@ -1,0 +1,19 @@
+<%- include('../includes/head.ejs') -%>
+<body>
+    <div class="container">
+      <h2>Edit Band</h2>
+        <div class="card">
+            <form action="/band/edit/<%= band.id %>" method="POST">
+      
+                <label for="bandname"><b>Band Name</b></label>
+                <input type="text" placeholder="Enter Band Name" name="bandname" value="<%= band.name %>" required>
+                <label for="bandtype"><b>Band Type</b></label>
+                <input type="text" placeholder="Enter Band Type" name="bandtype" value="<%= band.type %>" required>
+                
+                <button type="submit">Update</button>
+
+            </form>
+            <!-- <input type="hidden" name="_method" value="PUT" /> -->
+        </div>
+    </div>
+<%- include('../includes/foot.ejs') -%>

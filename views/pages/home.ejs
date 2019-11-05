@@ -1,0 +1,42 @@
+<%- include('../includes/head.ejs') -%>
+
+<body>
+    <div class="container">
+        <h2>Band List</h2>
+        <div>
+            <a href="/create/band">Create</a>
+        </div>
+        <div class="row">
+            <div class="col-md-8">
+                <h3>Band Name</h3>
+            </div>
+            <div class="col-md-2">
+                <h3>Type</h3>
+
+            </div>
+        </div>
+        <div class="row">
+                <% for(var band of bands) { %>
+                    
+                    
+            <div class="col-md-8">
+                    <li> <%= band.name %> </li>
+            </div>
+            <div class="col-md-2">
+                
+                    <li> <%= band.type %> </li>
+                 
+            </div>
+            <div class="col-md-2">
+                <a href='/band/edit/<%= band.id %>'><i class="fa fa-pencil" aria-hidden="true"></i></a>
+                <form  action="/band/delete/<%= band.id %>" method="POST">
+                     
+                     <button type="submit"><i class="fa fa-trash" aria-hidden="true"></i></button>
+                </form>
+            </div>
+            <% } %>
+        </div>
+
+    </div>
+
+<%- include('../includes/foot.ejs') -%>

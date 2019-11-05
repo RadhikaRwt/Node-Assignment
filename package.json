@@ -1,0 +1,29 @@
+{
+  "name": "band-project",
+  "version": "1.0.0",
+  "description": "Listing of bands",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Priyankagoel/Band-Project.git"
+  },
+  "author": "Priyanka Goel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Priyankagoel/Band-Project/issues"
+  },
+  "homepage": "https://github.com/Priyankagoel/Band-Project#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.4",
+    "ejs": "^2.7.1",
+    "express": "^4.17.1",
+    "express-session": "^1.16.2",
+    "path": "^0.12.7",
+    "sequelize": "^5.19.5",
+    "sqlite": "^3.0.3"
+  }
+}
